@@ -4,7 +4,7 @@
 FROM centos/systemd
 #FROM registry.access.redhat.com/rhel7
 
-# who's your boss?
+# who's your contact?
 MAINTAINER "Patrick I" <obiomap>
 
 # this is the version what we're building

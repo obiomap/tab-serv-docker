@@ -3,10 +3,10 @@ EDITOR=vim
 all: regconfig build
 
 build:
-	docker build -t tfoldi/tableau-server:release .
+	docker build -t tableau-server:release .
 
 run: build
-	docker run -ti --privileged -v /sys/fs/cgroup:/sys/fs/cgroup -v /run -p 80 tfoldi/tableau-server:release
+	docker run -ti --privileged -v /sys/fs/cgroup:/sys/fs/cgroup -v /run -p 80:80 tableau-server:release
 
 
 clean:
